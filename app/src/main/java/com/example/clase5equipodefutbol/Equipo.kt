@@ -5,6 +5,10 @@ data class Equipo(
     val id: Int,
     val name: String,
     val campeonatos: Int,
+    val pais: tipoPais,
     val url: String
 )
 
+enum class tipoPais{
+    ARGENTINA, ESPAÑA, INGLATERRA, BRASIL, ALEMANIA, FRANCIA, ITALIA
+}

@@ -19,12 +19,24 @@ class Adapter (val context: Context) : ListAdapter<Equipo, Adapter.ViewHolder>(D
         private val name : TextView = view.findViewById(R.id.textViewClub)
         private val champ : TextView = view.findViewById(R.id.textViewTotalCamp)
         private val logo: ImageView = view.findViewById(R.id.imageViewEscudo)
+        private val imagenPais: ImageView = view.findViewById(R.id.imageViewPais)
 
 
         fun bind (equipo: Equipo) {
-            name.text = "Club " + equipo.name.toString()
-            champ.text = "Campeonatos: " + equipo.campeonatos.toString()
+            name.text = equipo.name
+            champ.text = equipo.campeonatos.toString() + " " + "Ligas"
 
+            val image = when(equipo.pais){
+                tipoPais.ARGENTINA -> R.drawable.argentina
+                tipoPais.ALEMANIA -> R.drawable.alemania
+                tipoPais.BRASIL -> R.drawable.brasil
+                tipoPais.ESPAÑA -> R.drawable.espana
+                tipoPais.FRANCIA -> R.drawable.francia
+                tipoPais.INGLATERRA -> R.drawable.inglaterra
+                tipoPais.ITALIA -> R.drawable.italia
+            }
+
+            imagenPais.setImageResource(image)
 
             Glide.with(context)
                 .load(equipo.url)
