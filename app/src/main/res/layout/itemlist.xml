@@ -19,8 +19,8 @@
         android:id="@+id/textViewClub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
         android:text="TextView"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/imageViewEscudo"
@@ -30,10 +30,10 @@
         android:id="@+id/textViewTotalCamp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
         android:text="TextView"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imageViewEscudo"
         app:layout_constraintTop_toBottomOf="@+id/textViewClub" />
 
@@ -41,12 +41,9 @@
         android:id="@+id/imageViewPais"
         android:layout_width="57dp"
         android:layout_height="55dp"
-        android:layout_marginStart="196dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.809"
-        app:layout_constraintStart_toEndOf="@+id/imageViewEscudo"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
