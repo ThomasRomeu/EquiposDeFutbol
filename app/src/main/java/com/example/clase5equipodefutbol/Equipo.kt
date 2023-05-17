@@ -6,7 +6,8 @@ data class Equipo(
     val name: String,
     val campeonatos: Int,
     val pais: tipoPais,
-    val url: String
+    val url: String,
+    val apodo: String
 )
 
 enum class tipoPais{
